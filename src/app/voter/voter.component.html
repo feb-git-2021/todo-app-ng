@@ -1,0 +1,23 @@
+<div class="container">
+
+
+<div class="voter">
+     
+    <i class="bi bi-arrow-up vote-button"
+    [class.highlighted]="myVote == 1" 
+    (click)="upVote()"
+    ></i>
+        
+    <span class="vote-count">{{ totalVotes }}</span>
+    
+    <!-- <i 
+        class="glyphicon glyphicon-menu-down vote-button"
+        [class.highlighted]="myVote == -1" 
+        (click)="downVote()"></i> -->
+
+        <i class="bi bi-arrow-down vote-button"
+        [class.highlighted]="myVote == -1" 
+        (click)="downVote()"
+        ></i>
+</div>
+</div>
